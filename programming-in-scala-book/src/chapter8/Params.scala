@@ -28,6 +28,6 @@ def printTime(out: java.io.PrintStream = Console.out) =
 printTime()
 
 def printTime2(out: java.io.PrintStream = Console.err, divisor: Int = 1) =
-  out.println("time: " + System.currentTimeMillis() / divisor)
+  out.println("time: " + System.currentTimeMillis() / divisor
 
 printTime2()
