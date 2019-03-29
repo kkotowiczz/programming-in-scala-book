@@ -1,5 +1,6 @@
 package chapter10
 
+
 abstract class Element {
   def contents: Array[String]
   def height: Int = contents.length

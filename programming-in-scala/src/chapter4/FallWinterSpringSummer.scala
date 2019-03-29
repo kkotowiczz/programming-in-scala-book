@@ -1,4 +1,4 @@
-import ChecksumAccumulator.calculate
+import chapter4.ChecksumAccumulator.calculate
 
 
 object FallWinterSpringSummer extends App {
