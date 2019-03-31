@@ -38,7 +38,7 @@ object ChapterTwelveMain {
     println(filterFirst.get(), filterFirst.get())
 
     val incrementFirst = new BasicIntQueue with Filtering with Incrementing
-    incrementFirst.put(-1); incrementFirst.put(0); incrementFirst(1)
+    incrementFirst.put(-1); incrementFirst.put(0); incrementFirst.put(1)
     println(incrementFirst.get(), incrementFirst.get(), incrementFirst.get())
   }
 }
