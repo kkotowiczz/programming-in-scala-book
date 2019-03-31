@@ -1,5 +1,8 @@
-class Rational(n: Int, d: Int) {
+package com.github.kkotowiczz.chapter12
+
+class Rational(n: Int, d: Int) extends Ordered[Rational]{
   require(d != 0)
+
   val g = gcd(n.abs, d.abs)
   val numer: Int = n / g
   val denom: Int = d / g
@@ -38,6 +41,8 @@ class Rational(n: Int, d: Int) {
 
 
   def max(that: Rational) = if(this.lessThan(that)) that else this
+
+  override def compare(that: Rational): Int = (this.numer * that.denom) - (that.numer * this.denom)
 
   private def gcd(a: Int, b: Int): Int = if(b == 0) a else gcd(b, a % b)
 }

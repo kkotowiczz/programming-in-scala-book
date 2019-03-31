@@ -25,6 +25,4 @@ object Spiral {
     val nSides = args(0).toInt
     println(spiral(nSides, 0))
   }
-
-
 }
